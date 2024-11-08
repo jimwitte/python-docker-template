@@ -2,6 +2,6 @@
 
 ### Overview
 
-This is a Python project template with Docker support. It includes a basic `Dockerfile`, `docker-compose.yml`, and sample configurations for `.env` and `python-dotenv`.
+This is a Python project template with Docker support.
 
 ### Project Structure
