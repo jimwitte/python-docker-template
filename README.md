@@ -1,2 +1,7 @@
-# python-docker-template
-template for python app in docker container
+# Project Name
+
+### Overview
+
+This is a Python project template with Docker support. It includes a basic `Dockerfile`, `docker-compose.yml`, and sample configurations for `.env` and `python-dotenv`.
+
+### Project Structure
