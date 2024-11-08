@@ -1,0 +1,13 @@
+services:
+  app:
+    image: ghcr.io/jimwitte/<repo-name>:latest
+    restart: no
+    env_file:
+      - .env
+    networks:
+      - web
+networks:
+  web:
+    ipam:
+      config:
+        - subnet: 192.168.201.0/24

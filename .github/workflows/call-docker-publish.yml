@@ -1,0 +1,17 @@
+# .github/workflows/call-docker-publish.yml in the github-workflows repository
+
+name: Call Docker Publish Workflow
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  call-docker-publish:
+    uses: jimwitte/github-workflows/.github/workflows/docker-publish.yml@main
+    with:
+      image_tag: 'latest'

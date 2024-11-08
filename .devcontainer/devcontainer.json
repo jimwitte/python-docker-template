@@ -1,0 +1,11 @@
+{
+    "name": "Python 3 Dev Environment",
+    "build": {
+        "dockerfile": "./Dockerfile" 
+    },
+    "remoteUser": "vscode",
+    "containerEnv": {
+        "SSH_AUTH_SOCK": "/ssh-agent"
+    },
+    "postCreateCommand": "pip install --no-cache-dir -r requirements.txt"
+}
